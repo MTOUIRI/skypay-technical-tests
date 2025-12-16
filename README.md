@@ -1,102 +1,112 @@
-Skypay Technical Tests - Complete Solutions
+# Skypay Technical Tests - Complete Solutions
 
-📋 Overview
+## 📋 Overview
 This repository contains complete solutions for both Skypay technical tests, demonstrating versatility in handling different software engineering challenges.
 
-🎯 Tests Completed
-✅ Test 1: Banking Service
-Location: /test1-banking-system
-Challenge: Implement core banking operations (deposit, withdraw, print statement)
-Key Features:
+## 🎯 Tests Completed
 
-Clean single-class implementation
-Transaction history with snapshots
-Comprehensive exception handling
-O(1) deposit/withdrawal operations
-Complete test coverage
+### ✅ Test 1: Banking Service
+**Location:** `/test1-banking-system`  
+**Challenge:** Implement core banking operations (deposit, withdraw, print statement)
 
-View Full Documentation →
+**Key Features:**
+- Clean single-class implementation
+- Transaction history with snapshots
+- Comprehensive exception handling
+- O(1) deposit/withdrawal operations
+- Complete test coverage
 
-✅ Test 2: Hotel Reservation System
-Location: /test2-hotel-reservation
-Challenge: Build a hotel booking system managing rooms, users, and reservations
-Key Features:
+[View Full Documentation →](./test1-banking-system/README.md)
 
-Multi-entity system (Room, User, Booking, Service)
-Snapshot pattern for data integrity
-Complex business logic (availability checking, balance management)
-Real-time booking validation
-Professional documentation with UML diagrams
+### ✅ Test 2: Hotel Reservation System
+**Location:** `/test2-hotel-reservation`  
+**Challenge:** Build a hotel booking system managing rooms, users, and reservations
 
-View Full Documentation & PDF →
+**Key Features:**
+- Multi-entity system (Room, User, Booking, Service)
+- Snapshot pattern for data integrity
+- Complex business logic (availability checking, balance management)
+- Real-time booking validation
+- Professional documentation with UML diagrams
 
-🛠️ Technical Stack
-Language: Java 21 (JDK 21)
-Core Libraries:
+[View Full Documentation & PDF →](./test2-hotel-reservation/README.md)
 
-java.util.ArrayList - In-memory data storage
-java.time.LocalDate - Modern date handling
-java.time.temporal.ChronoUnit - Date calculations
+## 🛠️ Technical Stack
 
-Design Patterns:
+**Language:** Java 21 (JDK 21)
 
-Snapshot Pattern (data preservation)
-Builder Pattern (entity construction)
-Enum Pattern (type safety)
+**Core Libraries:**
+- `java.util.ArrayList` - In-memory data storage
+- `java.time.LocalDate` - Modern date handling
+- `java.time.temporal.ChronoUnit` - Date calculations
 
-Best Practices:
+**Design Patterns:**
+- Snapshot Pattern (data preservation)
+- Builder Pattern (entity construction)
+- Enum Pattern (type safety)
 
-Exception handling
-Input validation
-Clean code principles
-Comprehensive testing
-Professional documentation
+**Best Practices:**
+- Exception handling
+- Input validation
+- Clean code principles
+- Comprehensive testing
+- Professional documentation
 
+## 🚀 Quick Start
 
-🚀 Quick Start
-Clone Repository
-bashgit clone https://github.com/MTOUIRI/skypay-technical-tests.git
+### Clone Repository
+```bash
+git clone https://github.com/MTOUIRI/skypay-technical-tests.git
 cd skypay-technical-tests
-Run Banking System (Test 1)
-bashcd test1-banking-system
+```
+
+### Run Banking System (Test 1)
+```bash
+cd test1-banking-system
 javac Account.java
 java Account
-Run Hotel Reservation (Test 2)
-bashcd test2-hotel-reservation
+```
+
+### Run Hotel Reservation (Test 2)
+```bash
+cd test2-hotel-reservation
 javac Service.java
 java Service
+```
 
-💡 Key Achievements
-Banking Service (Test 1)
-✅ 100% requirement compliance
-✅ 5/5 exception tests passing
-✅ O(1) performance for core operations
-✅ Clean, maintainable code
-✅ Complete audit trail
-Hotel Reservation (Test 2)
-✅ 6/6 test cases passing
-✅ Snapshot pattern preserving data integrity
-✅ Zero double-booking (perfect overlap detection)
-✅ Atomic transactions (balance + booking)
-✅ Professional documentation with UML diagrams
+## 💡 Key Achievements
 
-🎓 Design Decisions
-Banking System
+### Banking Service (Test 1)
+- ✅ 100% requirement compliance
+- ✅ 5/5 exception tests passing
+- ✅ O(1) performance for core operations
+- ✅ Clean, maintainable code
+- ✅ Complete audit trail
 
-Inner Transaction Class - Encapsulation and simplicity
-Balance Snapshots - O(1) balance retrieval
-Reverse Chronological Order - Banking industry standard
-LocalDate Usage - Modern Java best practice
+### Hotel Reservation (Test 2)
+- ✅ 6/6 test cases passing
+- ✅ Snapshot pattern preserving data integrity
+- ✅ Zero double-booking (perfect overlap detection)
+- ✅ Atomic transactions (balance + booking)
+- ✅ Professional documentation with UML diagrams
 
-Hotel Reservation
+## 🎓 Design Decisions
 
-Snapshot Pattern - Financial accuracy over storage efficiency
-Separate Entities - Clear separation of concerns
-ArrayList Storage - As per requirements (simplicity)
-Comprehensive Validation - Prevent data corruption
+### Banking System
+- **Inner Transaction Class** - Encapsulation and simplicity
+- **Balance Snapshots** - O(1) balance retrieval
+- **Reverse Chronological Order** - Banking industry standard
+- **LocalDate Usage** - Modern Java best practice
 
+### Hotel Reservation
+- **Snapshot Pattern** - Financial accuracy over storage efficiency
+- **Separate Entities** - Clear separation of concerns
+- **ArrayList Storage** - As per requirements (simplicity)
+- **Comprehensive Validation** - Prevent data corruption
 
-📖 Documentation Structure
+## 📖 Documentation Structure
+
+```
 skypay-technical-tests/
 │
 ├── README.md (this file)
@@ -104,68 +114,76 @@ skypay-technical-tests/
 ├── test1-banking-system/
 │   ├── Account.java
 │   ├── README.md
-│   └── screenshots/
-│       └── statement.png
+│   ├── screenshots/
+│   │   ├── statement-output.png
+│   │   └── exception-tests.png
+│   └── diagrams/
+│       ├── class-diagram.png
+│       ├── sequence-diagram1.png
+│       └── sequence-diagram2.png
 │
 └── test2-hotel-reservation/
     ├── Service.java
     ├── README.md
-    ├── Skypay_Test_Presentation.pdf
+    ├── Skypay_Hotel_Test_Presentation.pdf
     └── screenshots/
-        ├── rooms.png
-        ├── bookings.png
-        └── users.png
+        ├── Execution-Results.png
+        ├── Rooms.png
+        ├── printAll()-Bookings.png
+        └── printAllUsers().png
+```
 
-🧪 Testing Coverage
-Banking System
+## 🧪 Testing Coverage
 
-✅ Standard operations (deposit, withdraw, statement)
-✅ Edge cases (zero amount, negative amount)
-✅ Error scenarios (insufficient balance, null date)
-✅ Sequential transactions
-✅ Statement formatting
+### Banking System
+- ✅ Standard operations (deposit, withdraw, statement)
+- ✅ Edge cases (zero amount, negative amount)
+- ✅ Error scenarios (insufficient balance, null date)
+- ✅ Sequential transactions
+- ✅ Statement formatting
 
-Hotel Reservation
+### Hotel Reservation
+- ✅ Room creation and updates
+- ✅ User balance management
+- ✅ Booking with validation
+- ✅ Availability checking (overlap detection)
+- ✅ Date validation
+- ✅ Balance verification
+- ✅ Snapshot preservation after updates
 
-✅ Room creation and updates
-✅ User balance management
-✅ Booking with validation
-✅ Availability checking (overlap detection)
-✅ Date validation
-✅ Balance verification
-✅ Snapshot preservation after updates
+## 🔍 Code Quality Standards Applied
 
+- ✅ **Clean Code** - Meaningful names, clear structure
+- ✅ **DRY Principle** - No code duplication
+- ✅ **SOLID Principles** - Single responsibility, encapsulation
+- ✅ **Documentation** - Comprehensive JavaDoc comments
+- ✅ **Error Handling** - Defensive programming
+- ✅ **Testing** - Built-in test cases
 
-🔍 Code Quality
-Standards Applied
+### Metrics
+- **Banking System:** ~250 lines of clean, documented code
+- **Hotel Reservation:** ~400 lines with proper structure
+- **Documentation:** ~100 lines of comments per file
+- **Test Coverage:** 100% of required functionality
 
-✅ Clean Code - Meaningful names, clear structure
-✅ DRY Principle - No code duplication
-✅ SOLID Principles - Single responsibility, encapsulation
-✅ Documentation - Comprehensive JavaDoc comments
-✅ Error Handling - Defensive programming
-✅ Testing - Built-in test cases
+## 📞 Contact
 
-Metrics
+**Mouad TOUIRI**
 
-Banking System: ~250 lines of clean, documented code
-Hotel Reservation: ~400 lines with proper structure
-Documentation: ~100 lines of comments per file
-Test Coverage: 100% of required functionality
+- 📧 Email: mouad.touiri@gmail.com
+- 📱 Phone: +212 690 002 573
+- 💼 LinkedIn: [linkedin.com/in/mouad-touiri-10b064247](https://linkedin.com/in/mouad-touiri-10b064247/)
+- 💻 GitHub: [github.com/MTOUIRI](https://github.com/MTOUIRI)
+- 🌐 Portfolio: [smartbac.com](https://smartbac.com)
 
+## 📝 License
 
-📞 Contact
-Mouad TOUIRI
-📧 Email: mouad.touiri@gmail.com
-📱 Phone: +212 690 002 573
-💼 LinkedIn: linkedin.com/in/mouad-touiri
-💻 GitHub: github.com/MTOUIRI
-🌐 Portfolio: smartbac.com
-
-📝 License
 These solutions are submitted as part of the Skypay technical assessment process.
+
 © 2025 Mouad TOUIRI - All Rights Reserved
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
+
 Thank you to the Skypay recruitment team for the opportunity to demonstrate my skills through these interesting challenges. Both tests were engaging and provided excellent opportunities to showcase different aspects of software engineering.
+
 I look forward to discussing these solutions and the next steps in the recruitment process.
