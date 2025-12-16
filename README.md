@@ -1,7 +1,4 @@
 Skypay Technical Tests - Complete Solutions
-Candidate: Mouad TOUIRI
-Date: December 2025
-Position: Développeur Full Stack (Freelance)
 
 📋 Overview
 This repository contains complete solutions for both Skypay technical tests, demonstrating versatility in handling different software engineering challenges.
