@@ -16,8 +16,6 @@ This repository contains complete solutions for both Skypay technical tests, dem
 - O(1) deposit/withdrawal operations
 - Complete test coverage
 
-[View Full Documentation →](./test1-banking-system/README.md)
-
 ### ✅ Test 2: Hotel Reservation System
 **Location:** `/test2-hotel-reservation`  
 **Challenge:** Build a hotel booking system managing rooms, users, and reservations
@@ -28,8 +26,6 @@ This repository contains complete solutions for both Skypay technical tests, dem
 - Complex business logic (availability checking, balance management)
 - Real-time booking validation
 - Professional documentation with UML diagrams
-
-[View Full Documentation & PDF →](./test2-hotel-reservation/README.md)
 
 ## 🛠️ Technical Stack
 
